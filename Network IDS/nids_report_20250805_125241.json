@@ -1,0 +1,121 @@
+{
+  "scan_info": {
+    "timestamp": "2025-08-05T12:52:41.460506",
+    "total_alerts": 3,
+    "blocked_ips": [
+      "10.56.228.58",
+      "35.223.238.178"
+    ],
+    "detection_rules": 10
+  },
+  "alert_summary": {
+    "HIGH": {
+      "Reconnaissance": 2
+    },
+    "LOW": {
+      "Protocol Anomaly": 1
+    }
+  },
+  "recent_alerts": [
+    {
+      "id": "1754378328_10.56.228.58_10.56.228.120",
+      "timestamp": "2025-08-05 12:48:48.826089",
+      "severity": "HIGH",
+      "category": "Reconnaissance",
+      "source_ip": "10.56.228.58",
+      "destination_ip": "10.56.228.120",
+      "source_port": 0,
+      "destination_port": 0,
+      "protocol": "TCP",
+      "description": "Port scan detected: 11 ports scanned",
+      "packet_data": "",
+      "rule_triggered": "Port Scan Detection",
+      "response_action": "BLOCK"
+    },
+    {
+      "id": "1754378329_10.56.228.120_23.215.60.35",
+      "timestamp": "2025-08-05 12:48:49.031168",
+      "severity": "LOW",
+      "category": "Protocol Anomaly",
+      "source_ip": "10.56.228.120",
+      "destination_ip": "23.215.60.35",
+      "source_port": 52857,
+      "destination_port": 80,
+      "protocol": "TCP",
+      "description": "HTTP traffic on non-standard port",
+      "packet_data": "",
+      "rule_triggered": "HTTP on Non-Standard Port",
+      "response_action": "LOG"
+    },
+    {
+      "id": "1754378501_35.223.238.178_10.56.228.120",
+      "timestamp": "2025-08-05 12:51:41.057294",
+      "severity": "HIGH",
+      "category": "Reconnaissance",
+      "source_ip": "35.223.238.178",
+      "destination_ip": "10.56.228.120",
+      "source_port": 0,
+      "destination_port": 0,
+      "protocol": "TCP",
+      "description": "Port scan detected: 11 ports scanned",
+      "packet_data": "",
+      "rule_triggered": "Port Scan Detection",
+      "response_action": "BLOCK"
+    }
+  ],
+  "traffic_statistics": {
+    "total": 267
+  },
+  "rule_statistics": [
+    {
+      "name": "Port Scan Detection",
+      "trigger_count": 0,
+      "last_triggered": null
+    },
+    {
+      "name": "SSH Brute Force",
+      "trigger_count": 0,
+      "last_triggered": null
+    },
+    {
+      "name": "DDoS Attack",
+      "trigger_count": 0,
+      "last_triggered": null
+    },
+    {
+      "name": "Suspicious DNS Query",
+      "trigger_count": 0,
+      "last_triggered": null
+    },
+    {
+      "name": "Large Data Transfer",
+      "trigger_count": 0,
+      "last_triggered": null
+    },
+    {
+      "name": "HTTP on Non-Standard Port",
+      "trigger_count": 1,
+      "last_triggered": "2025-08-05T12:48:49.031158"
+    },
+    {
+      "name": "ICMP Sweep",
+      "trigger_count": 0,
+      "last_triggered": null
+    },
+    {
+      "name": "SQL Injection Attempt",
+      "trigger_count": 0,
+      "last_triggered": null
+    },
+    {
+      "name": "XSS Attempt",
+      "trigger_count": 0,
+      "last_triggered": null
+    },
+    {
+      "name": "Password in Clear Text",
+      "trigger_count": 0,
+      "last_triggered": null
+    }
+  ]
+}
