@@ -22,13 +22,6 @@ A comprehensive, real-time Network Intrusion Detection System (NIDS) built in Py
 
 ---
 
-## 📷 Dashboard Preview
-
-> **Access Dashboard:** http://localhost:5000  
-> Displays real-time stats, alert logs, traffic graphs, and blocked IPs.
-
----
-
 ## 🧰 Technologies Used
 
 - Python 3
